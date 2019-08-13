@@ -1,0 +1,114 @@
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;    
+}
+body{
+    margin: 0;
+    color: var(--ion-color-secondary-shade);
+    font-family: $font-primary;
+}
+
+h1, h2, h3, h4{
+    font-weight: 600;
+}
+
+[devider]{
+    border: 0;
+    outline: 0;
+    box-shadow: 0;
+    border-bottom: 1px solid rgba(#fff, 0.2);
+}
+ion-menu{
+    ion-content{
+        --background: #340069;
+        // --padding-top: 24px;
+        ion-list{
+            padding: 0!important;
+            ion-item{
+                --background: #340069;
+                --color: rgba(255,255,255,0.9);
+                --background-focused: #340069;
+                --background-hover: #340069;     
+                --inner-border-width: 0;
+                border-bottom: 1px solid darken(#340069, 5%);
+                ion-icon{
+                    color: var(--ion-color-light);
+                    margin-right: 16px;
+                }
+            }
+        }
+        .login-data{
+            padding: 32px 0 0;
+            background-color: darken(#340069, 5%);
+            img{
+                padding: 0 16px;
+            }
+            h1{
+                padding: 0 16px;
+                color: rgba(255,255,255,0.9);
+                font-size: 1.3rem;
+                margin: 12px 0 6px;
+            }
+            p{
+                padding: 0 16px 16px;
+                color: rgba(255,255,255,0.6);
+                font-size: 0.8rem;
+                margin: 0;
+            }
+            [devider]{
+                border-bottom-color: darken(#340069, 5%);
+            }
+        }
+    }
+}
+
+[field_err], [social_err], [social_success]{
+    font-size: 12px !important;
+    padding: 2px 2px 3px;
+    display: block;
+    background-color: #ff0000;
+    color: #fff !important;
+    border-radius: 2px;
+    margin: 0;
+    margin-top: 2px;
+    line-height: 18px;
+    text-align: center; 
+}
+ion-toast{
+    &.green {
+        --background: #3adb76;
+      }
+    &.blue {
+        --background: rgb(33, 166, 243);
+    }
+    &.yallow {
+        --background: #ffd900;
+        color: var(--ion-color-primary);
+    }
+    &.red {
+        --background: #fff;
+        color: #ff0000;
+        font-weight: bold;
+    }
+    &.dark {
+        --background: var(--ion-color-primary);
+    }
+}
+// ============
+// Arabic Dir
+// ============
+.lang-ar{
+    direction: rtl;
+    .input-inline-field{
+        ion-icon{
+            margin-left: 12px;
+            margin-right: 0!important;
+        }
+    }
+    ion-menu ion-content ion-list ion-item ion-icon{
+                        color: var(--ion-color-light);
+                        margin-left: 16px;
+                        margin-right: 0px;
+    }
+}

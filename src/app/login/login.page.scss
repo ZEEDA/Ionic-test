@@ -1,0 +1,99 @@
+ion-content{
+    &:before{
+        content: "";
+        background: url("/assets/bg.jpg") no-repeat top center / cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        filter: blur(1px);
+        -webkit-filter: blur(1px);        
+        opacity: 0.2;
+    }
+    &:after{
+        content: "";
+        background: linear-gradient(180deg, #490092, #180041, #0b001f);//, #22015a
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    .inner-content{
+        position: relative;
+        z-index: 12;
+    }
+    ion-card{
+        box-shadow: none;
+        ion-card-content{
+            padding: 0;
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 56px;
+        img{
+            width: 160px;
+        }
+    }
+    h1{
+        color: #fff;
+        font-weight: normal;
+        margin-bottom: 0;
+    }
+    ion-item{
+        --background: transparent;
+        --highlight-color-focused: #fff;
+        --color: rgba(255,255,255, 1);
+        --color-focused: #fff;
+        --color-activated: #fff;
+        --border-color: rgba(255,255,255, 0.2);
+        width: 100%;        
+    }
+    .input-inline-field{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        // border-bottom: 1px solid darken(#fff, 5%);
+        ion-icon{
+            font-size: 30px;
+            color: #fff;
+            margin-right: 12px;
+        }
+        .item-has-focus.label-floating.sc-ion-label-md-h, .item-has-focus .label-floating.sc-ion-label-md-h, .item-has-focus.label-stacked.sc-ion-label-md-h, .item-has-focus .label-stacked.sc-ion-label-md-h {
+            color: #fff;
+        }
+    }
+    .check-field{
+        ion-item{
+            --padding-start: 0;
+            color: rgba(#fff, 0.6);
+        }
+    }
+    .login-btn-wrapper{
+        display: flex;
+        align-items: center;
+        .title{
+            p{
+                font-size: 1.35rem;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        // ion-fab-button{
+        //     --ion-color-base: linear-gradient(0deg, var(--ion-color-secondary), var(--ion-color-secondary-tint))!important;
+        // }
+    }
+    .links{
+        margin-top: 56px;
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        a{
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+}

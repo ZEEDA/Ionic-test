@@ -1,0 +1,32 @@
+{
+    "HOME": "Home",
+    "CAPTURE": "Capture image",
+    "PROFILE": "Profile",
+    
+    "LOGIN": "Login",
+    "LOGOUT": "Logout",
+    "SIGNUP": "Signup",
+    "NAME": "Name",
+    "USERNAME": "Username",
+    "PASSWORD": "Password",
+    "FORGET_PASSWORD": "Forgot Password",
+    "REMEMBER_ME": "Remember me!",    
+    "SEND": "Send",
+
+    "SAVE": "Save",
+
+    "LAST_LOGIN": "Last login",
+    "GREETING": "Welcome",
+    "LOADING_MSG": "Loading...",
+
+    "MENU": "Menu",
+
+    "OK": "OK",
+    "CANCEL": "Cancel",
+
+    "VALIDATE_NAME": "Name is missing!!",
+    "VALIDATE_PASSWORD": "Password sould be more than 6 charachters and less than 30!!",
+
+    "MORE": "More"
+
+}

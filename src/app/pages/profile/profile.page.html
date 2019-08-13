@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      {{ 'PROFILE' | translate }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="welcome-card">
+      <img [src]="proImg"/>
+      <ion-card-header>
+        <ion-button (click)="captureImage()">
+          <ion-icon name="camera"></ion-icon>
+        </ion-button>
+        <ion-button (click)="getFromGallery()">
+          <ion-icon name="image"></ion-icon>
+        </ion-button>
+      </ion-card-header>
+    </ion-card>  
+</ion-content>
